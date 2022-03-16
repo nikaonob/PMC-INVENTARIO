@@ -19,15 +19,18 @@ namespace pmc_inventario
     /// </summary>
     public partial class AgregarArticuloMenu : Window
     {
+        public bool precionado = false;
         public AgregarArticuloMenu()
         {
             InitializeComponent();
         }
-        public AgregarArticuloMenu(int cod)
+        public AgregarArticuloMenu(int cod,string codigo,string descripcion)
         {
             InitializeComponent();
             lblTitulo.Content = "Modificar Articulo";
             btnAgregar.Content = "Modificar";
+            txtCodigo.Text = codigo;
+            txtDescripcion.Text = descripcion;
         }
 
         private void btnAgregar_Click(object sender, RoutedEventArgs e)
@@ -58,8 +61,10 @@ namespace pmc_inventario
                 else
                 {
                     Cargar.AgregarArchivo(txtCodigo.Text, txtDescripcion.Text, "Arreglar");
+                    precionado = true;
                     this.Close();
                 }
+                
             }
         }
     }

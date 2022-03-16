@@ -4,3 +4,5 @@
 802200,Conjunto Deutz 813,Arreglar
 45616549,asdasdafgasgsdgasdg,Arreglar
 1241254,Conjunto,Arreglar
+4807725,Conjunto Deutz Turbo,Arreglar
+4817725,Conjunto Deuz Turbo Ecologico,Arreglar

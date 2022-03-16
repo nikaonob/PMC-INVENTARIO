@@ -19,7 +19,7 @@ namespace pmc_inventario
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
+    {  
         public MainWindow()
         {
             InitializeComponent();
@@ -45,13 +45,26 @@ namespace pmc_inventario
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            int b = int.Parse(dtgLista.SelectedIndex.ToString());
-
-            MessageBox.Show(b.ToString());
-            AgregarArticuloMenu Agregar = new AgregarArticuloMenu(0);
             
-            Agregar.ShowDialog();
-            devolverLista();
+            int indice = int.Parse(dtgLista.SelectedIndex.ToString());
+            if (indice >= 0)
+            {
+                string codigo = "";
+                string descripcion = "";
+
+                for (int i = 1; i < dtgLista.Items.Count; i++)
+                {
+                    codigo = (dtgLista.Columns[0].GetCellContent(dtgLista.Items[indice]) as TextBlock).Text.ToString();
+                    descripcion = (dtgLista.Columns[1].GetCellContent(dtgLista.Items[indice]) as TextBlock).Text.ToString();
+                }
+                if (codigo != "")
+                {
+                    AgregarArticuloMenu Agregar = new AgregarArticuloMenu(0, codigo, descripcion);
+                    Agregar.ShowDialog();
+                    devolverLista();
+                }
+            }
+       
         }
     }
 }

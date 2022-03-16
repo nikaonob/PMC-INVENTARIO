@@ -34,6 +34,7 @@ namespace pmc_inventario
         }
         public CargarArchivo(string BD)
         {
+            Articulo ArticuloSeleccionado = new Articulo();
             this.BD = BD;
             StreamWriter Crear;
             if (!(File.Exists(BD)))

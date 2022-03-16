@@ -20,7 +20,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <DataGrid Name="dtgLista" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="317,158,67,72" SelectionChanged="dtgLista_SelectionChanged"/>
+        <DataGrid Name="dtgLista" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="317,158,67,72" SelectionChanged="dtgLista_SelectionChanged" IsSynchronizedWithCurrentItem="False"/>
         <Button Content="   Agregar Articulo
                 " HorizontalAlignment="Left" Margin="72,192,0,0" VerticalAlignment="Top" Width="118" Height="35" Click="Button_Click"/>
         <Button Content="   Modificar Articulo
