@@ -1,0 +1,23 @@
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\bin\Debug\net6.0-windows\pmc inventario.exe
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\bin\Debug\net6.0-windows\pmc inventario.deps.json
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\bin\Debug\net6.0-windows\pmc inventario.runtimeconfig.json
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\bin\Debug\net6.0-windows\pmc inventario.dll
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\bin\Debug\net6.0-windows\pmc inventario.pdb
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\pmc inventario.csproj.AssemblyReference.cache
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\App.g.cs
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\pmc inventario_MarkupCompile.cache
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\pmc inventario_MarkupCompile.lref
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\MainWindow.baml
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\pmc inventario.g.resources
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\pmc inventario.GeneratedMSBuildEditorConfig.editorconfig
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\pmc inventario.AssemblyInfoInputs.cache
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\pmc inventario.AssemblyInfo.cs
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\pmc inventario.csproj.CoreCompileInputs.cache
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\pmc inventario.dll
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\ref\pmc inventario.dll
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\pmc inventario.pdb
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\pmc inventario.genruntimeconfig.cache
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\AgregarArticuloMenu.g.cs
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\AgregarArticuloMenu.baml
+D:\pc1\escritorio\Programacion\PROGRAMAS\pmc inventario\pmc inventario\obj\Debug\net6.0-windows\refint\pmc inventario.dll

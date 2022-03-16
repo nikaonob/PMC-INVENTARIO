@@ -1,0 +1,44 @@
+﻿<Window x:Class="pmc_inventario.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pmc_inventario"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="644" Width="908">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="Organizador de Inventario" Margin="31,27,510,536" Foreground="#FF1D1212" Background="{Binding ActualWidth, ElementName=label, Mode=OneWay}" FontWeight="Bold" FontFamily="Arial Black" FontSize="24" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <DataGrid Name="dtgLista" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="317,158,67,72" SelectionChanged="dtgLista_SelectionChanged"/>
+        <Button Content="   Agregar Articulo
+                " HorizontalAlignment="Left" Margin="72,192,0,0" VerticalAlignment="Top" Width="118" Height="35" Click="Button_Click"/>
+        <Button Content="   Modificar Articulo
+                " HorizontalAlignment="Left" Margin="72,288,0,0" VerticalAlignment="Top" Width="118" Height="42" Click="Button_Click_1"/>
+        <Button Content="   Eliminar Articulo
+                " HorizontalAlignment="Left" Margin="72,392,0,0" VerticalAlignment="Top" Width="118" Height="40"/>
+        <Button Content="Buscar" HorizontalAlignment="Left" Margin="737,97,0,0" VerticalAlignment="Top" Width="104"/>
+        <TextBox HorizontalAlignment="Left" Margin="317,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389" Height="21"/>
+        <Label Content="Buscar por:
+               " HorizontalAlignment="Left" Margin="317,74,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Codigo
+                     " HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Width="74"/>
+        <RadioButton Content="Descripcion
+" HorizontalAlignment="Left" Margin="512,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="El Articulo se encuentra en el sector:" HorizontalAlignment="Left" Margin="297,561,0,0" VerticalAlignment="Top"/>
+        <Label Name="lblSector" Content="" HorizontalAlignment="Left" Margin="512,561,0,0" VerticalAlignment="Top"/>
+        <Button Content="         Ver Ubicacion
+                " HorizontalAlignment="Left" Margin="709,561,0,0" VerticalAlignment="Top" Width="132"/>
+
+    </Grid>
+</Window>
