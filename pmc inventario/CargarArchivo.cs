@@ -63,11 +63,37 @@ namespace pmc_inventario
                 Leer.Close();
             }
             
-
-
         }
-        
+        public void Eliminar(string codigo)
+        {
 
-                
+            StreamReader Leer = File.OpenText(BD);
+            StreamWriter Escribir = File.CreateText("Temp.txt");
+            string lectura = Leer.ReadLine();
+            if (lectura != null)
+            {
+                ListaArticulos = new List<Articulo>();
+                while (lectura != null)
+                {
+                    string[] articulo = lectura.Split(',');
+                    if (articulo[0] == codigo)
+                    {
+
+                    }
+                    else
+                    {
+                        Escribir.WriteLine(articulo[0] + ',' + articulo[1] + ',' + articulo[2]);
+                    }
+
+                    lectura = Leer.ReadLine();
+                }
+                Escribir.Close();
+                Leer.Close();
+                File.Delete(BD);
+                File.Move("Temp.txt", BD);
+                File.Delete("Temp.txt");
+            }
+        }
+
     }
 }

@@ -1,8 +1,2 @@
-3363414,Cojinete de Biela,A3
-3355456,Cojinete de Bancada,C4
-223456,Volante,E54
-802200,Conjunto Deutz 813,Arreglar
-45616549,asdasdafgasgsdgasdg,Arreglar
-1241254,Conjunto,Arreglar
-4807725,Conjunto Deutz Turbo,Arreglar
-4817725,Conjunto Deuz Turbo Ecologico,Arreglar
+4817725,Conjunto Motor Deutz 913 Turbo,A2
+4807725,Conjunto Motor Deutz 913,B3

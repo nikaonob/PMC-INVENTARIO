@@ -26,7 +26,7 @@
         <Button Content="   Modificar Articulo
                 " HorizontalAlignment="Left" Margin="72,288,0,0" VerticalAlignment="Top" Width="118" Height="42" Click="Button_Click_1"/>
         <Button Content="   Eliminar Articulo
-                " HorizontalAlignment="Left" Margin="72,392,0,0" VerticalAlignment="Top" Width="118" Height="40"/>
+                " HorizontalAlignment="Left" Margin="72,392,0,0" VerticalAlignment="Top" Width="118" Height="40" Click="Button_Click_2"/>
         <Button Content="Buscar" HorizontalAlignment="Left" Margin="737,97,0,0" VerticalAlignment="Top" Width="104"/>
         <TextBox HorizontalAlignment="Left" Margin="317,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389" Height="21"/>
         <Label Content="Buscar por:

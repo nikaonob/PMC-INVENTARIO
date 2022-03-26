@@ -66,5 +66,24 @@ namespace pmc_inventario
             }
        
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            int indice = int.Parse(dtgLista.SelectedIndex.ToString());
+            if (indice >= 0)
+            {
+                string codigo = "";
+                for (int i = 1; i < dtgLista.Items.Count; i++)
+                {
+                    codigo = (dtgLista.Columns[0].GetCellContent(dtgLista.Items[indice]) as TextBlock).Text.ToString();
+                }
+                if (codigo != "")
+                {
+                    CargarArchivo Cargar = new CargarArchivo("BaseDatos.txt");
+                    Cargar.Eliminar(codigo);
+                    devolverLista();
+                }
+            }
+        }
     }
 }

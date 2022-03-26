@@ -29,12 +29,14 @@ namespace pmc_inventario
             InitializeComponent();
             lblTitulo.Content = "Modificar Articulo";
             btnAgregar.Content = "Modificar";
+            precionado = true;
             txtCodigo.Text = codigo;
             txtDescripcion.Text = descripcion;
         }
 
         private void btnAgregar_Click(object sender, RoutedEventArgs e)
         {
+
             if (txtCodigo.Text != "" && txtDescripcion.Text != "")
             {
                 Articulo miArticulo = new Articulo();
@@ -47,25 +49,44 @@ namespace pmc_inventario
                     MessageBox.Show("Deve Ingresar un Codigo Numerico");
                 }
                 miArticulo.Descripcion = txtDescripcion.Text;
-                miArticulo.Ubicacion = "Arreglar"; //ARREGLAR////////////////////////////////////////////////
+                miArticulo.Ubicacion = cmbUbicacion.Text;
                 CargarArchivo Cargar = new CargarArchivo("BaseDatos.txt");
                 List<Articulo> miListaArticulos = Cargar.DevolverLista().Where(n => n.Codigo == int.Parse(txtCodigo.Text)).ToList();
-                if(miListaArticulos.Equals(null))
+                if (miListaArticulos.Count() > 0)
                 {
-                    if (miListaArticulos[0].Codigo == int.Parse(txtCodigo.Text))
+
+                    if (precionado == false) //Si esta en el modo Agregar
                     {
-                        MessageBox.Show("Ya hay un Articulo con el mismo codigo");
+                        if (miListaArticulos[0].Codigo == int.Parse(txtCodigo.Text))
+                        {
+                            MessageBox.Show("Ya hay un Articulo con el mismo codigo");
+                        }
                     }
-                   
+                    else
+                    {
+                        if (precionado)//Modo Modificar
+                        {
+                            Cargar.Eliminar(txtCodigo.Text);
+                        }
+                        Cargar.AgregarArchivo(txtCodigo.Text, txtDescripcion.Text, cmbUbicacion.Text);
+                        precionado = true;
+                        this.Close();
+                    }
+
+
                 }
                 else
                 {
-                    Cargar.AgregarArchivo(txtCodigo.Text, txtDescripcion.Text, "Arreglar");
+                    Cargar.AgregarArchivo(txtCodigo.Text, txtDescripcion.Text, cmbUbicacion.Text);
                     precionado = true;
                     this.Close();
                 }
                 
+
             }
         }
+
+            
+        
     }
 }
